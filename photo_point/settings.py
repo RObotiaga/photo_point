@@ -51,7 +51,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'test_photo_point.urls'
+ROOT_URLCONF = 'photo_point.urls'
 
 TEMPLATES = [
     {
