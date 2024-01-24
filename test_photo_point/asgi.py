@@ -1,5 +1,5 @@
 """
-ASGI config for photo_point project.
+ASGI config for test_photo_point project.
 
 It exposes the ASGI callable as a module-level variable named ``application``.
 
@@ -11,6 +11,6 @@ import os
 
 from django.core.asgi import get_asgi_application
 
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'photo_point.settings')
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'test_photo_point.settings')
 
 application = get_asgi_application()

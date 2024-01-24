@@ -1,5 +1,5 @@
 """
-WSGI config for photo_point project.
+WSGI config for test_photo_point project.
 
 It exposes the WSGI callable as a module-level variable named ``application``.
 
@@ -11,6 +11,6 @@ import os
 
 from django.core.wsgi import get_wsgi_application
 
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'photo_point.settings')
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'test_photo_point.settings')
 
 application = get_wsgi_application()

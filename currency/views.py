@@ -12,8 +12,12 @@ last_10_requests = []
 @require_http_methods(["GET"])
 @ratelimit(key='user', rate='1/10s', method=['GET'], block=True)
 def get_current_usd(request):
+    # Записываем время перед отправкой запроса
+    request_time = datetime.datetime.now()
+
     # Запрос курса доллара к рублю
     response = client.latest(currencies=['RUB'])['data']['RUB']
+    response = {"rate": response, "request_time": request_time}
 
     # Добавление текущего запроса в список
     last_10_requests.append(response)
